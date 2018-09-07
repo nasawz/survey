@@ -36,6 +36,7 @@
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-discard-comments": "^4.0.0",
     "postcss-loader": "^3.0.0",
+    "postcss-safe-parser": "^4.0.1",
     "prettier": "^1.14.2",
     "react-hot-loader": "^4.3.6",
     "shelljs": "^0.8.2",

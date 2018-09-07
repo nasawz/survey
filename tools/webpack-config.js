@@ -120,7 +120,15 @@ module.exports = (type) => {
         template: './src/templates/index.ejs',
         filename: 'index.html'
       }),
-      isDist && new OptimizeCSSAssetsPlugin({ cssProcessorOptions: { safe: true } }),
+      isDist &&
+        new OptimizeCSSAssetsPlugin({
+          cssProcessorOptions: {
+            parser: require('postcss-safe-parser'),
+            discardComments: {
+              removeAll: true
+            }
+          }
+        }),
       isDist &&
         new MiniCssExtractPlugin({
           filename: `bundle/${pkgJson.version}/[name].css`,
