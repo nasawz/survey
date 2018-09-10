@@ -146,6 +146,8 @@ module.exports = (type) => {
       ]),
       new HtmlWebpackIncludeAssetsPlugin({
         assets: [
+          'lib/layer.js',
+          'lib/polyfill.min.js',
           'lib/react.production.min.js',
           'lib/react-dom.production.min.js',
           'lib/survey.react.min.js'

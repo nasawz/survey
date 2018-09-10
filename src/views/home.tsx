@@ -14,6 +14,7 @@ export default class Home extends React.Component<HomeProps, any> {
     this.props.getSurveyJSON();
   }
   public render() {
+    console.log(this.props.surveyJSON);
     let { surveyJSON, sendSurveyJSON } = this.props;
     return (
       <ClubAuth>
